@@ -1,0 +1,37 @@
+{
+  "name": "mine",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@mollie/api-client": "^3.6.0",
+    "@progress/kendo-drawing": "^1.16.2",
+    "@progress/kendo-react-pdf": "^5.0.1",
+    "bootstrap": "^5.1.3",
+    "express": "^4.17.3",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.15",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.0",
+    "rxjs": "^7.5.4",
+    "use-local-storage": "^2.2.6"
+  },
+  "scripts": {
+    "start": "set PORT=3001 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/bootstrap": "^5.1.9",
+    "@types/jquery": "^3.5.13"
+  }
+}
