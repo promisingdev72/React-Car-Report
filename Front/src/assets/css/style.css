@@ -1,0 +1,101 @@
+.header{
+    background-image: url(../images/headerBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.underLine{
+    height: 3px;
+    width: 40px;
+    border-radius: 3px;
+    display: flex;
+    margin-left: auto;
+    background-color: #FFB24D;
+}
+.linkMark{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.homeHeader{
+    background-image: url(../images/homeBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+.headerText{
+    padding: 100px 100px 50px 150px;
+    max-width: 1100px;
+    color: white;
+}
+.headerText>p{
+    font-size: 70px;
+}
+.headerBtn{
+    padding: 20px;
+    background-color: #FFB24D;
+    width: 335px;
+    height: 64px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    margin-left:150px;
+}
+.btnText{
+    color: #041F3B;
+    font-size: 30px;
+}
+.noUnderline{
+    text-decoration: none;
+}
+.noUnderline:hover{
+    text-decoration: none;
+}
+.btnTriangle{
+    margin-left: 30px;
+}
+.labelOfText{
+    color: #041F3B;
+    font-size: 50px;
+}
+.licenseplate {
+    color: #333;
+    background-color: #FFB24D;
+    background-image: url(../images/nlEuro.svg);
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 62px;
+    line-height: 62px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    
+    padding-left: 60px;
+    padding-bottom: 10px;
+    
+    width: 470px;
+    border: 4px solid #080607;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+  }
+  /* .inputLicense::before{
+        content: '';
+        position: absolute;
+        bottom: -135px;
+        width: 15%;
+        height: 3px;
+        z-index: 1;
+        background-color: #041F3B;
+        left: 43%;
+  } */
+  .searchBtn{
+      color: #FFB24D;
+      font-size: 30px;
+      padding: 5px 60px 5px 60px;
+      border-radius: 30px;
+      background-color: #041F3B;
+  }
