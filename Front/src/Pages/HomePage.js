@@ -20,11 +20,12 @@ const HomePage = () => {
         ).catch();
     }
 
+    const getCarInfo = async() => {
+        await getInfo();
+        setIsOpen(true);
+    }
+
     const handleClickButton = () => {
-        const getCarInfo = async() => {
-            await getInfo();
-            setIsOpen(true);
-        }
         getCarInfo();
     }
 
