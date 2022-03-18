@@ -1,9 +1,8 @@
-.header{
+.fs-12{
+    font-size: 12px;
+}
+.navbar-back-color{
     background-image: url(../images/headerBack.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
 }
 .underLine{
     height: 3px;
@@ -13,17 +12,15 @@
     margin-left: auto;
     background-color: #FFB24D;
 }
-.linkMark{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
+.cusor-pointer{
+    cursor: pointer;
 }
 .homeHeader{
     background-image: url(../images/homeBack.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 100%;
     width: 100%;
 }
 .headerText{
