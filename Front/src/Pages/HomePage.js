@@ -1,10 +1,10 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import '../assets/css/style.css';
 import triangleIcon from '../assets/images/triangle.svg';
 import triangleYe from '../assets/images/triangleYe.svg';
-import CarInfo from '../Components/CarInfo';
 import '../index.css';
+import CarInfo from '../Components/CarInfo';
 const HomePage = () => {
 
     const [license , setLicense] = useState(""); 
@@ -20,12 +20,14 @@ const HomePage = () => {
         ).catch();
     }
 
-    const getCarInfo = async() => {
-        await getInfo();
-        setIsOpen(true);
-    }
+    
 
     const handleClickButton = () => {
+        const getCarInfo = async() => {
+        await getInfo();
+        setIsOpen(true);
+        
+    }
         getCarInfo();
     }
 
@@ -61,6 +63,9 @@ const HomePage = () => {
                     {
                         isOpen ? <div className='Info'><CarInfo data={info} /></div> : ""
                     }
+                </div>
+                <div>
+                    
                 </div>
             </div>
         </>

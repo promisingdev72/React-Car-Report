@@ -5,6 +5,7 @@ import PdfContainer from './PdfContainer';
 
 const CarInfo = (data) => {
     const info = React.createRef();
+    console.log(data);
     
     const createPdf = (html) => Doc.createPdf(html)
 
