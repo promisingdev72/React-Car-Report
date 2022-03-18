@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../assets/css/style.css';
 import triangleIcon from '../assets/images/triangle.svg';
 import triangleYe from '../assets/images/triangleYe.svg';
-import CarInfo from '../CarInfo';
+import CarInfo from '../Components/CarInfo';
 import '../index.css';
 const HomePage = () => {
 
