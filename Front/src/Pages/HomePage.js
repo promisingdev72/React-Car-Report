@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import '../assets/css/style.css';
 import triangleIcon from '../assets/images/triangle.svg';
 import triangleYe from '../assets/images/triangleYe.svg';
+import newsImage from '../assets/images/news.png';
+import messageImage from '../assets/images/message.png';
+import communicationImage from '../assets/images/communication.png';
+import documentImage from '../assets/images/document.png';
 import '../index.css';
 import CarInfo from '../Components/CarInfo';
 const HomePage = () => {
@@ -55,18 +59,20 @@ const HomePage = () => {
     return (
         <>
             <div className='homeHeader'>
-                <div style={changeStyle} className='text-white'>
+                <div className='text-white headerText'>
                     <p>Want to know what your car is worth within two minutes?</p>
                 </div>
-                <div className='headerBtn'>
-                    <Link to="/" className='noUnderline d-flex justify-content-center align-items-center'>
-                       <div className='btnText'>Let's get started!</div>
-                       <div className='btnTriangle'><img src={triangleIcon} width={22} height={19}></img></div>
-                    </Link>
+                <div className='d-flex mt-5'>
+                    <div className='headerBtn'>
+                        <Link to="/" className='noUnderline d-flex justify-content-between align-items-center'>
+                            <div className='btnText'>Let's get started!</div>
+                            <div className='btnTriangle'><img src={triangleIcon} width={22} height={19}></img></div>
+                        </Link>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div className='labelOfText d-flex justify-content-center align-items-center mt-5 mb-4'>Enter your license plate here</div>
+            <div className='licensePart'>
+                <div className='labelOfText d-flex justify-content-center align-items-cente text-center'>Enter your license plate here</div>
                 <div className='inputLicense d-flex justify-content-center align-items-center'>
                     <input type="text" className="licenseplate"
                         name='license' 
@@ -75,10 +81,10 @@ const HomePage = () => {
                         maxLength='7'
                     />
                 </div>
-                <div className='d-flex justify-content-center align-items-center mt-5'>
+                <div className='d-flex d-flex justify-content-center align-items-center'>
                     <div className='searchBtn d-flex justify-content-center align-items-center' onClick={handleClickButton}>Retrieve DATA
                         <span className='ml-3 justify-content-center align-items-center d-flex'>
-                            <img src={triangleYe} width={22} height={19}></img>
+                            <img src={triangleYe} width={20} height={15}></img>
                         </span>
                     </div>
                     {
@@ -87,6 +93,50 @@ const HomePage = () => {
                 </div>
                 <div>
                     
+                </div>
+            </div>
+            <div className='itemPart'>
+                <div className='row'>
+                    <div className='col-md-3 col-sm-6 col-12 d-flex justify-content-center align-items-center'>
+                        <div className='row'>
+                            <div className='itemImage d-flex  justify-content-center align-items-center'>
+                                <img src={newsImage}></img>
+                            </div>
+                            <div className='itemText d-flex  justify-content-center align-items-center text-center'>
+                                <p>Within 2 minutes the current market value and trade-in value of your car in your mailbox.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-md-3 col-sm-6 col-12 d-flex justify-content-center align-items-center'>
+                        <div className='row'>
+                            <div className='itemImage d-flex  justify-content-center align-items-center'>
+                                <img src={messageImage}></img>
+                            </div>
+                            <div className='itemText d-flex  justify-content-center align-items-center text-center'>
+                                <p>Gain insight into the same market intelligence that car companies have. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-md-3 col-sm-6 col-12 d-flex justify-content-center align-items-center'>
+                        <div className='row'>
+                            <div className='itemImage d-flex  justify-content-center align-items-center'>
+                                <img src={communicationImage}></img>
+                            </div>
+                            <div className='itemText d-flex  justify-content-center align-items-center text-center'>
+                                <p>We scan the entire used car market and compare your car with comparable vehicles that are for sale and have been sold in the last 45 days!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-md-3 col-sm-6 col-12 d-flex justify-content-center align-items-center'>
+                        <div className='row'>
+                            <div className='itemImage d-flex  justify-content-center align-items-center'>
+                                <img src={documentImage}></img>
+                            </div>
+                            <div className='itemText d-flex  justify-content-center align-items-center text-center'>
+                                <p>We provide insight into the WOK status and residual BPM. This way you run a lot less risk when buying a used car!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

@@ -45,17 +45,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 100px 100px 50px 150px;
     height: 80vh;
+}
+.headerText{
+    font-size: 50px;
+    max-width: 600px;
 }
 .headerBtn{
     padding: 20px;
     background-color: #FFB24D;
-    width: 335px;
-    height: 64px;
     border-radius: 5px;
-    align-items: center;
-    display: flex;
-    margin-left:150px;
 }
 .btnText{
     color: #041F3B;
@@ -68,48 +68,97 @@
     text-decoration: none;
 }
 .btnTriangle{
-    margin-left: 30px;
+    margin-left:30px;
+}
+.licensePart{
+    padding: 100px 50px;
 }
 .labelOfText{
     color: #041F3B;
     font-size: 50px;
+    margin-bottom: 30px;
+}
+.inputLicense{
+    margin-bottom: 30px;
 }
 .licenseplate {
-    color: #333;
+    color: #161615;
     background-color: #FFB24D;
     background-image: url(../images/nlEuro.svg);
     background-repeat: no-repeat;
     font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 62px;
-    line-height: 62px;
+    font-size: 50px;
+    line-height: 50px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    
-    padding-left: 60px;
-    padding-bottom: 10px;
-    
-    width: 470px;
+    background-size: contain;
+    width: 30%;
+    padding-left: 20px;
     border: 4px solid #080607;
-    border-radius: 20px;
+    border-radius: 15px;
     outline: none;
     position: relative;
   }
-  /* .inputLicense::before{
-        content: '';
-        position: absolute;
-        bottom: -135px;
-        width: 15%;
-        height: 3px;
-        z-index: 1;
-        background-color: #041F3B;
-        left: 43%;
-  } */
   .searchBtn{
       color: #FFB24D;
       font-size: 30px;
-      padding: 5px 60px 5px 60px;
       border-radius: 30px;
       background-color: #041F3B;
+      padding: 10px 30px;
+      cursor: pointer;
+  }
+  .itemPart{
+      padding: 30px 50px;
+  }
+
+
+  @media only screen and (max-width: 1023px) {
+        .headerText{
+            font-size: 30px;
+        }
+        .homeHeader{
+            padding: 50px 20px;
+        }
+        .headerBtn{
+            padding: 10px;
+            background-color: #FFB24D;
+            border-radius: 5px;
+        }
+        .btnText{
+            font-size: 20px;
+        }
+        .labelOfText{
+            font-size: 30px;
+        }
+        .licensePart{
+            padding: 20px;
+        }
+        .licenseplate {
+            color: #161615;
+            background-color: #FFB24D;
+            background-image: url(../images/nlEuro.svg);
+            background-repeat: no-repeat;
+            background-size:contain;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 40px;
+            line-height: 30px;
+            font-weight: bold;
+            padding-left: 10px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid #080607;
+            border-radius: 10px;
+            width: 100%;
+          }
+        .homeHeader{
+            height: 60vh;
+        }
+        .searchBtn{
+            font-size: 20px;
+        }
+        .inputLicense{
+            margin-bottom: 20px;
+        }
   }
 
