@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import '../assets/css/style.css';
 import triangleIcon from '../assets/images/triangle.svg';
@@ -10,6 +10,16 @@ const HomePage = () => {
     const [license , setLicense] = useState(""); 
     const [info , setInfo] = useState([]);
     const [isOpen , setIsOpen] = useState(false);
+    const [width, setWindowWidth] = useState(0);
+    const [reducePaddingHeader, setReducePaddingHeader] = useState(false);
+
+    const handleClickButton = () => {
+        const getCarInfo = async() => {
+            await getInfo();
+            setIsOpen(true);
+        }
+        getCarInfo();
+    }
 
     const getInfo = async () => {
         await fetch(`https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken=${license}`)
@@ -20,21 +30,32 @@ const HomePage = () => {
         ).catch();
     }
 
-    
+    useEffect(() => { 
 
-    const handleClickButton = () => {
-        const getCarInfo = async() => {
-        await getInfo();
-        setIsOpen(true);
-        
+        updateDimensions();
+   
+        window.addEventListener("resize", updateDimensions);
+        return () => 
+          window.removeEventListener("resize",updateDimensions);
+    }, [])
+
+
+    const updateDimensions = () => {
+        const width = window.innerWidth;
+        setWindowWidth(width);
+        width > 1023?setReducePaddingHeader(true):setReducePaddingHeader(false);
     }
-        getCarInfo();
+
+    const changeStyle = {
+        padding: reducePaddingHeader ? '100px 100px 50px 150px' : '50px 20px 50px 20px',
+        fontSize: reducePaddingHeader ? '50px' : '30px',
+        maxWidth: reducePaddingHeader ?'800px':'500px'
     }
 
     return (
         <>
             <div className='homeHeader'>
-                <div className='headerText'>
+                <div style={changeStyle} className='text-white'>
                     <p>Want to know what your car is worth within two minutes?</p>
                 </div>
                 <div className='headerBtn'>

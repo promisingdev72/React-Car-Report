@@ -47,14 +47,6 @@
     background-position: center;
     height: 80vh;
 }
-.headerText{
-    padding: 100px 100px 50px 150px;
-    max-width: 1100px;
-    color: white;
-}
-.headerText>p{
-    font-size: 50px;
-}
 .headerBtn{
     padding: 20px;
     background-color: #FFB24D;
