@@ -166,82 +166,120 @@
     border-radius: 5px;
     background-color: #FFB24D;
   }
-
-
-  @media only screen and (max-width: 1023px) {
-        .headerText{
-            font-size: 30px;
-        }
-        .homeHeader{
-            padding: 50px 20px;
-        }
-        .headerBtn{
-            padding: 10px;
-            background-color: #FFB24D;
-            border-radius: 5px;
-        }
-        .btnText{
-            font-size: 20px;
-        }
-        .labelOfText{
-            font-size: 30px;
-        }
-        .licensePart{
-            padding: 20px;
-        }
-        .licenseplate {
-            color: #161615;
-            background-color: #FFB24D;
-            background-image: url(../images/nlEuro.svg);
-            background-repeat: no-repeat;
-            background-size:contain;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 40px;
-            line-height: 30px;
-            font-weight: bold;
-            padding-left: 10px;
-            text-transform: uppercase;
-            text-align: center;
-            border: 2px solid #080607;
-            border-radius: 10px;
-            width: 100%;
-          }
-        .homeHeader{
-            height: 60vh;
-        }
-        .searchBtn{
-            font-size: 20px;
-        }
-        .inputLicense{
-            margin-bottom: 20px;
-        }
-        .reportTitle{
-            font-size: 30px;
-        }
-        .reportImage{
-            padding: 0px;
-        }
-        .reportRight{
-            padding: 0px;
-        }
-        .reportPart{
-            padding: 20px;
-        }
-        .reportText{
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .reportBtn{
-            font-size: 16px;
-        }
-        
-  }
-
   .slick-list{
       width: 80%;
       margin: 0 auto !important;
+      display: flex !important;
   }
 
   .reviewContent{
       background-color: #F5F5F5;
   }
+  .carouselItem{
+      padding: 40px;
+      height: 100%;
+  }
+  .item{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 45px 15px;
+    height: 100%;
+  }
+  .slick-slide>div, .slick-slide>div>div{
+      height: 100%;
+  }
+  .slick-track{
+      display: flex !important;
+  }
+  .heightFull{
+      height: 100%;
+  }
+  .slick-dots li button:before{
+      font-size: 20px !important;
+      color: #FFB24D !important;
+  }
+  .footer{
+      background-color: #041F3B;
+      color: white;
+  }
+  .slick-slider{
+      padding-bottom: 50px;
+  }
+  .slick-dots{
+      bottom: 20px !important;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .headerText{
+        font-size: 30px;
+    }
+    .homeHeader{
+        padding: 50px 20px;
+    }
+    .headerBtn{
+        padding: 10px;
+        background-color: #FFB24D;
+        border-radius: 5px;
+    }
+    .btnText{
+        font-size: 20px;
+    }
+    .labelOfText{
+        font-size: 30px;
+    }
+    .licensePart{
+        padding: 20px;
+    }
+    .licenseplate {
+        color: #161615;
+        background-color: #FFB24D;
+        background-image: url(../images/nlEuro.svg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 40px;
+        line-height: 30px;
+        font-weight: bold;
+        padding-left: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid #080607;
+        border-radius: 10px;
+        width: 100%;
+      }
+    .homeHeader{
+        height: 60vh;
+    }
+    .searchBtn{
+        font-size: 20px;
+    }
+    .inputLicense{
+        margin-bottom: 20px;
+    }
+    .reportTitle{
+        font-size: 30px;
+    }
+    .reportImage{
+        padding: 0px;
+    }
+    .reportRight{
+        padding: 0px;
+    }
+    .reportPart{
+        padding: 20px;
+    }
+    .reportText{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .reportBtn{
+        font-size: 16px;
+    }
+    .carouselItem{
+        padding: 10px !important;
+    }
+    .slick-dots li button:before{
+        font-size: 10px !important;
+    }
+    
+}
