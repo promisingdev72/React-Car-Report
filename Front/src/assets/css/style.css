@@ -11,7 +11,21 @@
     border-radius: 5px;
     bottom: 0;
 }
-
+.fs-20{
+    font-size: 20px;
+}
+.fs-25{
+    font-size: 20px;
+}
+.bdcolor-yellow{
+    border: #FFB24D 1px solid;
+}
+.color-yellow{
+    color: #FFB24D;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
 .underLine{
     height: 3px;
     width: 40px;
@@ -23,18 +37,15 @@
 .cusor-pointer{
     cursor: pointer;
 }
-.navbar-back-img{
-    background-image: url(../images/headerBack.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.navbar-back-color{
+    background-color: #031E39;
 }
 .homeHeader{
     background-image: url(../images/homeBack.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 80vh;
 }
 .headerText{
     padding: 100px 100px 50px 150px;
