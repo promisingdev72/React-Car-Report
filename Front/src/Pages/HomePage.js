@@ -7,11 +7,18 @@ import newsImage from '../assets/images/news.png';
 import messageImage from '../assets/images/message.png';
 import communicationImage from '../assets/images/communication.png';
 import documentImage from '../assets/images/document.png';
+import reportImage from '../assets/images/report.png';
 import '../index.css';
 import CarInfo from '../Components/CarInfo';
+import Carousel from '../Components/Carousel';
+
+import "../assets/css/slick.css";
+import "../assets/css/slick-theme.css";
+
+
 const HomePage = () => {
 
-    const [license , setLicense] = useState(""); 
+    const [license , setLicense] = useState("");
     const [info , setInfo] = useState([]);
     const [isOpen , setIsOpen] = useState(false);
     const [width, setWindowWidth] = useState(0);
@@ -34,7 +41,7 @@ const HomePage = () => {
         ).catch();
     }
 
-    useEffect(() => { 
+    useEffect(() => {
 
         updateDimensions();
    
@@ -137,6 +144,47 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='reportPart'>
+                <div className='d-flex justify-content-center align-items-center'>
+                    <p className='reportTitle position-relative'>Sample report</p>
+                </div>
+                <div className='row'>
+                    <div className='col-md-6 col-sm-6 col-12 mt-3'>
+                        <div className='row justify-content-center align-items-center reportImage'>
+                            <img src={reportImage}></img>
+                        </div>
+                    </div>
+                    <div className='col-md-6 col-sm-6 col-12 mt-3 d-flex justify-content-center align-items-center'>
+                        <div className='row reportRight'>
+                            <div className='reportText d-flex justify-content-center align-items-center'>
+                                <p>
+                                    Curious about the report? Download the our PDF example report here with 
+                                    all parts that are checked during our license plate check.
+                                </p>
+                            </div>
+                            <div className='reportForm'>
+                                <input type="text" className='emailForm'></input>
+                                <div className='reportBtn d-flex justify-content-center align-items-center'>
+                                    <div>
+                                        DOWNLOAD EXAMPLE REPORT
+                                    </div>
+                                    <div className='ml-3'>
+                                        <img src={triangleIcon}></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='reviewPart'>
+                <div className='reviewTitle d-flex justify-content-center align-items-center'>
+                    <p className='d-flex justify-content-center align-itmes-center reviewText position-relative'>Reviews</p>
+                </div>
+                <div className='reviewContent'>
+                    <div><Carousel/></div>
                 </div>
             </div>
         </>
