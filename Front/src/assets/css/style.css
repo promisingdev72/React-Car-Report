@@ -208,6 +208,21 @@
   .slick-dots{
       bottom: 20px !important;
   }
+  .headerTitle{
+      font-size: 40px;
+  }
+  .headerTitle>p::after{
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 5px;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        background-color: #FFB24D;
+        border-radius: 5px;
+  }
+
 
   @media only screen and (max-width: 1023px) {
     .headerText{
