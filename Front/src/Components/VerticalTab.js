@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
-const Tabs = () => {
+const VerticalTab = () => {
 
     return(
         <>
@@ -25,4 +25,4 @@ const Tabs = () => {
     )
 }
 
-export default Tabs;
+export default VerticalTab;
