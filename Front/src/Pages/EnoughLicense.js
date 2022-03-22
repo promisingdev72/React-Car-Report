@@ -27,7 +27,7 @@ const EnoughLicense = () =>{
             <div className='dataWrap'>
                 <div>
                     <div className='row'>
-                        <div className='col-md-6' style={{padding:60}}>
+                        <div className='col-md-6 paddingReduce' style={{padding:60}}>
                             <div className='modelInfo'>
                                 <div className='modelTitle d-flex justify-content-center align-items-center'>
                                     <p>Model information</p>
@@ -105,9 +105,9 @@ const EnoughLicense = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-6' style={{padding:60}}>
+                        <div className='col-md-6 dataRight' style={{padding:60}}>
                             <div className='detailWrap'>
-                                <div className='phaseText position-relative'>Our unique report is the only one in the market to provide insight into:</div>
+                                <div className='phaseTitle'>Our unique report is the only one in the market to provide insight into:</div>
                                 <div className='phaseText position-relative'>Real-time market value</div>
                                 <div className='phaseText position-relative'>Current trade-in value</div>
                                 <div className='phaseText position-relative'>Total cost (TCO) for entire lifecycle</div>
@@ -120,18 +120,18 @@ const EnoughLicense = () =>{
                     </div>
                 </div>
                 <div className='row orderFormWrap'>
-                    <div className='col-md-6 col-sm-12'>
-                        <img src={carImage}></img>
+                    <div className='col-md-6 col-sm-12 d-flex carImage'>
+                        <img src={carImage} width="100%"></img>
                     </div>
-                    <div className='col-md-6 col-sm-12'>
-                        <div className='orderWrap'>
+                    <div className='col-md-6 col-sm-12 formWrap'>
+                        <div className='orderWrap d-flex justify-content-center align-items-center flex-column'>
                             <div className='orderTitle'>Order your report</div>
-                            <div className='emailInputWrap'>
+                            <div className='emailInputWrap d-flex'>
                                 <div className='iconOfLabel'>
                                     <img src= {instrumentImage}></img>
                                 </div>
                                 <div className='emailInput'>
-                                    <input type="text" placeholder='enter your mileage here'></input>
+                                    <input type="text" placeholder='enter your mileage here' className='inputEmailField'></input>
                                 </div>
                             </div>
                             <div className='orderBtnWrap'>

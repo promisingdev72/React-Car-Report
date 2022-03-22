@@ -414,11 +414,56 @@ tr:nth-child(odd){
     font-size: 40px;
     transform: translate(0, -50%);
 }
+.phaseText{
+    font-size: 20px;
+}
 .detailWrap{
     padding: 50px;
 }
 .dataWrap{
     background-color: #f5f5f5;
+}
+.phaseTitle{
+    font-size: 25px;
+}
+.orderTitle{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.orderWrap{
+    background-color: white;
+    height: 100%;
+}
+.orderBtnWrap{
+    margin-top: 30px;
+}
+.formWrap{
+    padding: 30px;
+}
+.carImage{
+    padding: 50px 100px;
+}
+.detailWrap{
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    padding: 70px;
+}
+.orderWrap {
+    border-radius: 10px;
+}
+.orderBtn{
+    padding: 10px 20px;
+    background: #FFB24D;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inputEmailField{
+    outline: none;
+    padding: 5px;
+}
+.emailInput{
+    margin-left: 30px;
 }
 
   @media only screen and (max-width: 1023px) {
@@ -554,5 +599,19 @@ tr:nth-child(odd){
         justify-content: center;
         align-items: center;
     }
-    
+    .paddingReduce{
+        padding: 20px;
+    }
+    .dataRight{
+        padding: 20px;
+    }
+    .detailWrap{
+        padding: 25px;
+    }
+    .emailInput{
+        margin-left: 10px;
+    }
+    .carImage{
+        padding: 30px 30px;
+    }
 }
