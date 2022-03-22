@@ -9,6 +9,8 @@ import Footer from './Components/Footer';
 import Contact from './Pages/Contact';
 import Report from './Pages/Report';
 import License from './Pages/License';
+import EnoughLicense from './Pages/EnoughLicense';
+
 const App = () => {
     
     return (
@@ -20,6 +22,7 @@ const App = () => {
                     <Route path="/contact" element={ <Contact/> } />
                     <Route path="/report" element={ <Report/> } />
                     <Route path="/license" element={ <License/> } />
+                    <Route path="/enough" element={ <EnoughLicense/> } />
                 </Routes>
             <Footer/>
         </>

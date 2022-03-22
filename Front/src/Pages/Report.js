@@ -43,7 +43,6 @@ const Report = () =>{
                                 <p>AUDI S3 SPORTBACK</p>
                             </div>
                             <div className='d-flex justify-content-center align-items-center'>
-                                {/* <input type='text carNumber'></input> */}
                                 <input type="text" className="licenseplateFix"
                                     name='license' 
                                     placeholder='License' 

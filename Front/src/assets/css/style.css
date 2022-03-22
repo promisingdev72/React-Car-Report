@@ -405,6 +405,21 @@ tr:nth-child(odd){
 .licenseWrap{
     min-height: 70vh;
 }
+.phaseText::before{
+    content: '\2023';
+    position: absolute;
+    color: #35A41A;
+    top: 50%;
+    left: -20px;
+    font-size: 40px;
+    transform: translate(0, -50%);
+}
+.detailWrap{
+    padding: 50px;
+}
+.dataWrap{
+    background-color: #f5f5f5;
+}
 
   @media only screen and (max-width: 1023px) {
     .headerText{
