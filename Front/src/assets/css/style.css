@@ -117,7 +117,7 @@
     width: 30%;
     padding-left: 20px;
     border: 4px solid #080607;
-    border-radius: 15px;
+    border-radius: 20px;
     outline: none;
     position: relative;
   }
@@ -163,6 +163,7 @@
       border-radius: 5px;
       border: 2px grey solid;
       font-size: 30px;
+      padding: 10px;
   }
   .reportText{
       font-size: 30px;
@@ -369,9 +370,40 @@ tr:nth-child(odd){
 }
 .licenseTitle{
     font-size: 40px;
+    padding: 30px 0 50px;
 }
 .reportBox{
-    padding: 10px;
+    padding: 60px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.reportBox>p{
+    font-size: 30px;
+}
+.reportBoxWrap{
+    background-color: #F5F5F5;
+    padding: 150px 0;
+}
+.licenseBtnWrap{
+    padding: 30px 0px;
+    margin-top: 30px;
+}
+.licenseBtn{
+    padding: 20px 50px;
+    background-color: #FFB24D;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.licenseBtn::after{
+    content: '\2023';
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+.licenseWrap{
+    min-height: 70vh;
 }
 
   @media only screen and (max-width: 1023px) {
@@ -405,11 +437,11 @@ tr:nth-child(odd){
         font-size: 40px;
         line-height: 30px;
         font-weight: bold;
-        padding-left: 10px;
+        padding : 15px;
         text-transform: uppercase;
         text-align: center;
         border: 2px solid #080607;
-        border-radius: 10px;
+        border-radius: 20px;
         width: 100%;
       }
     .licenseplateFix {
@@ -480,6 +512,32 @@ tr:nth-child(odd){
     }
     .detailTabs{
         padding: 5px;
+    }
+    .licenseTitle{
+        font-size: 23px;
+    }
+    .reportBoxWrap{
+        padding: 20px 0;
+    }
+    .reportBox{
+        padding: 20px 15px;
+    }
+    .reportBox>p{
+        font-size: 20px;
+    }
+    .licenseTitle {
+        padding: 15px 0 10px;
+    }
+    .licenseBtn{
+        padding: 20px 30px;
+    }
+    .licenseBtnWrap{
+        margin-top: 20px !important;
+    }
+    .confirmImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
