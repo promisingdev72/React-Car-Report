@@ -1,3 +1,12 @@
+
+*{
+    font-family: CircularStd-Bold; 
+}
+@font-face { font-family: CircularStd-Bold; 
+    src: url('../font/CircularStd-Bold.otf');
+}
+
+
 .fs-14{
     font-size: 14px;
 }
@@ -229,6 +238,7 @@
   }
   .headerTitle{
       font-size: 40px;
+      font-family: CircularStd-Bold;
   }
   .headerTitle>p::after{
         content: '';
