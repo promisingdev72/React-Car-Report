@@ -6,6 +6,10 @@
     src: url('../font/CircularStd-Bold.otf');
 }
 
+@font-face { font-family: CircularStd-Light-Italic; 
+    src: url('../font/CircularStd-Light\ Italic.otf');
+}
+
 
 .fs-14{
     font-size: 14px;
@@ -178,6 +182,7 @@
       border-radius: 10px;
       margin-top: 30px;
       cursor: pointer;
+      color: black;
   }
   .reportRight{
       padding: 50px;
@@ -296,6 +301,7 @@ div[role="tabpanel"]{
     padding: 15px;
     background-color: #FFB24D;
     border-radius: 10px;
+    color: black;
 }
 .getReportBtnWrap{
     cursor: pointer;
@@ -387,6 +393,7 @@ tr:nth-child(odd){
 .licenseBtnWrap{
     padding: 30px 0px;
     margin-top: 30px;
+    color: black;
 }
 .licenseBtn{
     padding: 20px 50px;
@@ -436,6 +443,7 @@ tr:nth-child(odd){
 }
 .orderBtnWrap{
     margin-top: 30px;
+    color: black;
 }
 .formWrap{
     padding: 30px;
@@ -465,6 +473,81 @@ tr:nth-child(odd){
 .emailInput{
     margin-left: 30px;
 }
+.sucessPayment{
+    padding: 30px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+@media only screen and (min-width: 900px){
+    .sucessPayment{
+        max-width: 900px;
+    }
+}
+.sucessWrap{
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+.dropDownBtn{
+    padding: 20px;
+    width: 100%;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dropDownBtn::after{
+    content: '\2023';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 50px;
+    color: #FFB24D;
+    transform: translate(0, -50%);
+}
+.sucessFooter>p{
+    font-family: CircularStd-Light-Italic;
+    text-align: center;
+    font-size: 30px;
+}
+.sucessHeader{
+    font-size: 50px;
+    color: #71C546;
+
+}
+.notiSucess{
+    font-size: 30px;
+    max-height: 0px;
+    opacity: 0;
+    transition: .3s;
+}
+.notiSucess.show{
+    max-height: 60px;
+    opacity: 1;
+}
+.emailPdfReportItemShow{
+    padding: 5px;
+    max-height: 0px;
+    opacity: 0;
+    transition: .3s;
+}
+.emailPdfReportItemShow.show{
+    max-height: 60px;
+    opacity: 1;
+}
+.sendBtn{
+    padding: 10px 50px;
+    background-color: #FFB24D;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.emailPdfReportItemShow>input{
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+    flex: 1;
+}
+
 
   @media only screen and (max-width: 1023px) {
     .headerText{

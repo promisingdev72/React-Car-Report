@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import VerticalTab from '../Components/VerticalTab';
 import audiLogo from '../assets/images/audi-logo.png';
@@ -133,14 +134,16 @@ const Report = () =>{
                             </div>
                             <div className='reportForm'>
                                 <input type="text" className='emailForm'></input>
-                                <div className='reportBtn d-flex justify-content-center align-items-center'>
-                                    <div>
-                                        DOWNLOAD EXAMPLE REPORT
+                                <Link className='noUnderline' to='/license'>
+                                    <div className='reportBtn d-flex justify-content-center align-items-center'>
+                                        <div>
+                                            DOWNLOAD EXAMPLE REPORT
+                                        </div>
+                                        <div className='ml-3'>
+                                            <img src={triangleIcon}></img>
+                                        </div>
                                     </div>
-                                    <div className='ml-3'>
-                                        <img src={triangleIcon}></img>
-                                    </div>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

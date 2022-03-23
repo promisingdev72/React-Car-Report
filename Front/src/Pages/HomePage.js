@@ -89,11 +89,13 @@ const HomePage = () => {
                     />
                 </div>
                 <div className='d-flex d-flex justify-content-center align-items-center'>
-                    <div className='searchBtn d-flex justify-content-center align-items-center' onClick={handleClickButton}>Retrieve DATA
-                        <span className='ml-3 justify-content-center align-items-center d-flex'>
-                            <img src={triangleYe} width={20} height={15}></img>
-                        </span>
-                    </div>
+                    <Link to="/report" className='noUnderline'>
+                        <div className='searchBtn d-flex justify-content-center align-items-center' onClick={handleClickButton}>Retrieve DATA
+                            <span className='ml-3 justify-content-center align-items-center d-flex'>
+                                <img src={triangleYe} width={20} height={15}></img>
+                            </span>
+                        </div>
+                    </Link>
                     {
                         isOpen ? <div className='Info'><CarInfo data={info} /></div> : ""
                     }

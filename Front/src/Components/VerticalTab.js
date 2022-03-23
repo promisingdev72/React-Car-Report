@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import triangleIcon from '../assets/images/triangle.svg';
 import '../assets/css/style.css';
@@ -17,14 +18,16 @@ const VerticalTab = () => {
                     <Tab tabFor="vertical-tab-four">Control <br></br> residual BPM</Tab>
                     <Tab tabFor="vertical-tab-five">APK and recalls</Tab>
                     <Tab tabFor="vertical-tab-six">Weight <br></br> other information</Tab>
-                    <div className='px-3 getReportBtnWrap'>
-                        <div className='getReportBtn d-flex justify-content-center align-items-center'>
-                            <p className='mb-0'>Get full report!</p>
-                            <div className='ml-3 d-flex justify-content-center align-items-center'>
-                                <img src= {triangleIcon}></img>
+                    <Link to='/enough' className='noUnderline'>
+                        <div className='px-3 getReportBtnWrap'>
+                            <div className='getReportBtn d-flex justify-content-center align-items-center'>
+                                <p className='mb-0'>Get full report!</p>
+                                <div className='ml-3 d-flex justify-content-center align-items-center'>
+                                    <img src= {triangleIcon}></img>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </TabList>
                 <TabPanel tabId="vertical-tab-one">
                     <div className='tableWrap d-flex justify-content-center align-items-center'>

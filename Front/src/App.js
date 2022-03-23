@@ -10,6 +10,7 @@ import Contact from './Pages/Contact';
 import Report from './Pages/Report';
 import License from './Pages/License';
 import EnoughLicense from './Pages/EnoughLicense';
+import LicenseSucess from './Pages/LicenseSucess';
 
 const App = () => {
     
@@ -23,6 +24,7 @@ const App = () => {
                     <Route path="/report" element={ <Report/> } />
                     <Route path="/license" element={ <License/> } />
                     <Route path="/enough" element={ <EnoughLicense/> } />
+                    <Route path='/sucess' element={ <LicenseSucess/> } />
                 </Routes>
             <Footer/>
         </>

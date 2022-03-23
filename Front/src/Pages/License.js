@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/style.css';
 import confirmImage from '../assets/images/confirm.png';
-
+import { Link } from "react-router-dom";
 
 const License = () =>{
     return(
@@ -19,9 +19,11 @@ const License = () =>{
                                     Thank you for requesting the sample report! <br></br>
                                     The sample report is on its way to your mailbox!
                                 </div>
-                                <div className='licenseBtnWrap'>
-                                    <span className='licenseBtn position-relative'>Get my license plate insight</span>
-                                </div>
+                                <Link to='/' className="noUnderline">
+                                    <div className='licenseBtnWrap'>
+                                        <span className='licenseBtn position-relative'>Get my license plate insight</span>
+                                    </div>
+                                </Link>
                             </div>
                             <div className='col-md-4 col-sm-12'>
                                 <div className='confirmImage'>
