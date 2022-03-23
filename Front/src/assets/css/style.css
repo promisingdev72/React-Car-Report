@@ -600,10 +600,10 @@ tr:nth-child(odd){
         align-items: center;
     }
     .paddingReduce{
-        padding: 20px;
+        padding: 20px !important;
     }
     .dataRight{
-        padding: 20px;
+        padding: 20px !important;
     }
     .detailWrap{
         padding: 25px;

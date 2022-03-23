@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d48776a5.css",
+    "main.js": "/static/js/main.b3716e08.js",
+    "static/media/report.png": "/static/media/report.3a99ebaa5d23786d05f7.png",
+    "static/media/homeBack.png": "/static/media/homeBack.a063d391f95f76619b76.png",
+    "static/media/car.png": "/static/media/car.d277300248eabcdfbffa.png",
+    "static/media/CircularStd-Bold.otf": "/static/media/CircularStd-Bold.5c4514a8399ec0064b9b.otf",
+    "static/media/audi-logo.png": "/static/media/audi-logo.ab64c75665d327d7921d.png",
+    "static/media/chart.png": "/static/media/chart.ca5447b40b7a64eebc5e.png",
+    "static/media/nlEuro.svg": "/static/media/nlEuro.3722b800b6b8d997873d.svg",
+    "static/media/logo_white.svg": "/static/media/logo_white.c4b4991eea9fbcd00902b133a9a7566e.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "static/media/langIcon.svg": "/static/media/langIcon.65a7c0d1f6f564d05b1d3e3f05737834.svg",
+    "static/media/triangle.svg": "/static/media/triangle.ae554efaac3d2c71cf4d142a37d87ae6.svg",
+    "static/media/triangleYe.svg": "/static/media/triangleYe.d3f3e05f9f2a448d9d4a3f348d11255b.svg",
+    "main.d48776a5.css.map": "/static/css/main.d48776a5.css.map",
+    "main.b3716e08.js.map": "/static/js/main.b3716e08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d48776a5.css",
+    "static/js/main.b3716e08.js"
+  ]
+}
